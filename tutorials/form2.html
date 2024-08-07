@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <table cellpadding="3" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td><label for="firstname">Firstname:</label></td>
+                    <td><input type="text" name="firstname" id="firstname"></td>
+                </tr>
+                <tr>
+                    <td><label for="middlename">Middlename:</label></td>
+                    <td><input type="text" name="middlename" id="middlename"></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Lastname:</label></td>
+                    <td><input type="text" name="lastname" id="lastname"></td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course:</label></td>
+                    <td>
+                        <select name="course" id="course">
+                            <option value="">Select Course</option>
+                            <option value="cse">CSE</option>
+                            <option value="it">IT</option>
+                            <option value="ee">Electrical Engineering</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone:</label></td>
+                    <td><input type="tel" name="phone" id="phone" maxlength="10"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><textarea name="address" id="address" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="retype-password">Re-type Password:</label></td>
+                    <td><input type="password" name="retype-password" id="retype-password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

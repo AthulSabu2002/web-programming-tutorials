@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - 3</title>
+</head>
+<body>
+    <form action="" autocomplete="on">
+        <table align="center">
+            <tbody>
+                <tr>
+                    <td><h2>Employee Details</h2></td>
+                </tr>
+                
+                <tr>
+                    <td><label for="employee-id">Id:</label></td>
+                    <td><input type="text" name="employee-id" id="employee-id" placeholder="Enter Employee ID" autocomplete="on" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="employee-name">Name:</label></td>
+                    <td><input type="text" name="employee-name" id="employee-name" placeholder="Enter Name" autocomplete="on" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender:</label></td>
+                    <td>
+                        <input type="radio" name="gender" id="male" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" required>
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other" required>
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="designation">Designation:</label></td>
+                    <td>
+                        <select name="designation" id="designation" required>
+                            <option value="" disabled selected>Select Designation</option>
+                            <option value="manager">Manager</option>
+                            <option value="employee">Employee</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="salary">Salary:</label></td>
+                    <td><input type="number" name="salary" id="salary" placeholder="Enter Salary" autocomplete="on" required></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
