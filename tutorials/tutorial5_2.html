@@ -1,0 +1,54 @@
+<!-- A palindrome is a number or a text phrase that reads the same backward and forward. For
+example, each of the following five-digit integers is a palindrome: 12321, 55555, 45554 and
+11611. Write a script that reads in a five-digit integer and determines whether it’s a
+palindrome. If the number is not five digits long, display an alert dialog indicating the
+problem to the user. Allow the user to enter a new value after dismissing the alert dialog. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 5.2</title>
+</head>
+<body>
+    <h1>Five-Digit Palindrome Checker</h1>
+
+    <script>
+        let input;
+        let continueChecking = true;
+
+        while (continueChecking) {
+            input = prompt("Enter a five-digit integer:");
+
+            if (input === null) {
+                document.writeln("<p>Operation cancelled by user.</p>");
+                continueChecking = false;
+            } else {
+                const num = parseInt(input);
+
+                if (!num || num < 10000 || num > 99999) {
+                    alert("Please enter a valid five-digit integer.");
+                } else {
+                    let originalNum = num;
+                    let reversedNum = 0;
+                    let tempNum = num;
+
+                    while (tempNum > 0) {
+                        let digit = tempNum % 10;
+                        reversedNum = reversedNum * 10 + digit;
+                        tempNum = Math.floor(tempNum / 10);
+                    }
+
+                    if (originalNum === reversedNum) {
+                        document.writeln("<p>" + num + " is a palindrome!</p>");
+                    } else {
+                        document.writeln("<p>" + num + " is not a palindrome.</p>");
+                    }
+                    continueChecking = false;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
