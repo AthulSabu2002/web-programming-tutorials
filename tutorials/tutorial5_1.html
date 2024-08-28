@@ -1,0 +1,49 @@
+<!-- Write JavaScript program to find factorial of a number, use prompt dialog box to get the
+input from user. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 5.1 </title>
+</head>
+<body>
+    
+
+
+    <script>
+
+        var num = window.prompt("Enter the number : ", '');
+
+        num = Number(num)
+
+        if(!num){
+            window.alert("Please enter a number!")
+            document.writeln("<h3>Please enter a number!</h3>")
+            document.writeln("<h1>Refresh the page to try again</h1>")
+        }
+        else if(num < 0){
+            window.alert("Please enter a positive number!")
+            document.writeln("<h1>Refresh the page to try again</h1>")
+        }
+        else{
+            var fact = 1;
+
+            for(let i = 1; i <= num; i++){
+                fact = fact * i;
+            }
+
+            window.alert("Factorial is : " + fact)
+
+            document.writeln("<h5>The number entered is : " + num +" </h5>")
+            document.writeln("<h5>The factorial is : " + fact +" </h5>")
+            document.writeln("<h1>Refresh the page to try again</h1>")
+        }
+
+        
+
+    </script>
+
+</body>
+</html>
