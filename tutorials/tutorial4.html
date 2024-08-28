@@ -1,0 +1,43 @@
+<!-- Write CSS and the corresponding HTML code for the following:
+i.Set the background color for the hover and active link states to "yellow".
+ii.Set the list style for ordered lists to "lower case alphabet".
+iii.Set "boat.jpg" as the background image of the page and set 3% margin for the page.
+iv.Set dotted border for the document -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 4</title>
+    <style>
+        body {
+            background-image: url('../images/boat.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 3%;
+            border: 3px dotted black;
+            padding: 20px;
+        }
+
+        a:hover, a:active {
+            background-color: yellow;
+        }
+
+        ol {
+            list-style-type: lower-alpha;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our HTML5!</h1>
+    <p>Here's a link to test hover and active states: <a href="#">Hover over me!</a></p>
+    <h2>Here's an ordered list:</h2>
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+</body>
+</html>
